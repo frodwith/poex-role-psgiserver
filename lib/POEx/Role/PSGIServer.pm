@@ -1,6 +1,6 @@
 package POEx::Role::PSGIServer;
 
-#ABSTRACT: Encapsulates core PSGI server behavior
+#ABSTRACT: (DEPRECATED) Encapsulates core PSGI server behavior
 use MooseX::Declare;
 
 =head1 SYNOPSIS
@@ -11,6 +11,8 @@ use MooseX::Declare;
     MyServer->new()->run($some_psgi_app);
 
 =head1 DESCRIPTION
+
+This module has been deprecated.
 
 POEx::Role::PSGIServer encapsulates the core L<PSGI> server behaviors into an easy to consume and extend role. It is based on previous POEx work such as POEx::Role::TCPServer which provides basic TCP socket multiplexing via POE::Wheel::SocketFactory and POE::Wheel::ReadWrite, and POEx::Role::SessionInstantiation which transforms plain Moose objects into POE sessions.
 
